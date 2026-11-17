@@ -1,18 +1,46 @@
-# POP21 — V19: Pré-publicação
+# POP21 Produções
 
-## O que mudou
-- Menu **Solicitar orçamento** usa a mesma navegação precisa dos demais links.
-- **Explore** e a marca no topo também usam a navegação suave controlada.
-- Ajuste de alinhamento de rolagem para telas menores e menu mobile com limite de altura.
-- Metadados para compartilhamento, favicon, robots.txt e configuração de fallback para Vercel.
-- Fotos, feedbacks reais, fedora, animações e vídeo com áudio preservados.
+Site desenvolvido para apresentar a POP21 Produções e seu trabalho em casamentos, formaturas e eventos corporativos.
 
-## Rodar
-`npm install` e `npm run dev`. Para validar a compilação: `npm run build`.
+A ideia foi trazer um pouco da experiência de assistir à banda ao vivo para a navegação: fotografias de palco, vídeo de abertura, tipografia marcante e movimentos discretos. O chapéu fedora do vocalista também virou um detalhe visual em alguns botões.
 
-## Antes de publicar
-- Confirmar telefone WhatsApp e Instagram com a banda.
-- Confirmar autorização de publicação dos depoimentos com nome e data.
-- Testar links, galeria e vídeo em celular e desktop.
-- Configurar domínio próprio e imagem de compartilhamento absoluta após definir URL pública.
-- O build não foi validado neste ambiente; não publicar sem executar `npm run build`.
+## O que tem no site
+
+- Apresentação da banda e dos formatos de show
+- Galeria com fotos reais das apresentações
+- Vídeo promocional com áudio original
+- Avaliações de clientes fornecidas pela POP21
+- Animações com GSAP e layout adaptado para celular
+- Contato direto para solicitar orçamento
+
+## Tecnologias
+
+React, TypeScript, Vite, GSAP e CSS.
+
+## Rodando localmente
+
+Requer Node.js e npm.
+
+```bash
+npm install
+npm run dev
+```
+
+Para conferir a versão de produção:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Decisões de desenvolvimento
+
+O maior cuidado foi equilibrar movimento e desempenho. Optei por animações de transformações leves, sem prender os efeitos à rolagem da página. O vídeo curto da abertura fica sem áudio para reprodução automática; o vídeo completo do show mantém o som e os controles de reprodução.
+
+A navegação leva aos títulos das seções, evitando que o espaçamento interno faça o conteúdo aparecer longe do topo da tela.
+
+## Materiais e créditos
+
+As fotografias, gravações, identidade e avaliações pertencem aos respectivos titulares e foram disponibilizadas para este projeto. O uso ou redistribuição desses materiais depende da autorização dos responsáveis.
+
+Projeto de desenvolvimento web: [Dzelmee](https://github.com/Dzelmee).
