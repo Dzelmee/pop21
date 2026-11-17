@@ -16,7 +16,7 @@ jobs:
         run: |
           python -m pip install --quiet gdown
           mkdir -p public/media
-          gdown --id 18KNxKZJzm7Qeh6p7ASUoTnAY3tsjBze6 -O public/media/aniversarios.jpg
+          gdown 'https://drive.google.com/uc?id=18KNxKZJzm7Qeh6p7ASUoTnAY3tsjBze6' -O public/media/aniversarios.jpg
           python - <<'PY'
           from pathlib import Path
           p=Path('public/media/aniversarios.jpg')
