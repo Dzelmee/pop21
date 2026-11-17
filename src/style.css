@@ -119,3 +119,14 @@ html{scroll-behavior:auto}
   .formation-count{display:block;grid-column:2;grid-row:3;font-size:10px;line-height:1.4}
   .formation-row>svg{grid-column:3;grid-row:1 / 4;justify-self:end;align-self:center}
 }
+
+/* Vídeo do show integrado à seção, sem janela modal */
+.statement-bottom{align-items:start}
+.showreel-inline{width:min(100%,510px);flex:0 1 510px;display:flex;flex-direction:column;gap:15px}
+.showreel-inline-heading{display:flex;justify-content:space-between;align-items:baseline;gap:15px;flex-wrap:wrap}
+.showreel-inline-heading strong{font-size:14px;letter-spacing:.08em;color:#fff}
+.showreel-inline-heading span{font-size:12px;color:#d4d0cf}
+.showreel-inline video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#050505;border:1px solid #ffffff30;border-radius:10px}
+.showreel-inline-link{display:inline-flex;align-items:center;gap:9px;align-self:flex-start;color:#e8a77c;font-size:11px;letter-spacing:.08em;text-decoration:none;padding:8px 0}
+.showreel-inline-link:hover{text-decoration:underline}
+@media(max-width:900px){.statement-bottom{flex-direction:column;align-items:stretch}.showreel-inline{width:100%;flex:auto}.showreel-inline video{max-height:65vh}}
