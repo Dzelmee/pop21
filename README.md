@@ -1,46 +1,51 @@
 # POP21 Produções
 
-Site desenvolvido para apresentar a POP21 Produções e seu trabalho em casamentos, formaturas e eventos corporativos.
+Site que desenvolvi para a POP21 Produções, banda que atua em casamentos, formaturas e eventos corporativos.
 
-A ideia foi trazer um pouco da experiência de assistir à banda ao vivo para a navegação: fotografias de palco, vídeo de abertura, tipografia marcante e movimentos discretos. O chapéu fedora do vocalista também virou um detalhe visual em alguns botões.
+A proposta foi fugir de uma página institucional convencional e trazer um pouco da presença de palco para a navegação. Usei fotos das apresentações, vídeo na abertura, tipografia expressiva e transições discretas. O chapéu do vocalista acabou virando um detalhe dos botões.
 
-## O que tem no site
+**Site:** https://pop21.com.br
 
-- Apresentação da banda e dos formatos de show
-- Galeria com fotos reais das apresentações
-- Vídeo promocional com áudio original
-- Avaliações de clientes fornecidas pela POP21
-- Animações com GSAP e layout adaptado para celular
-- Contato direto para solicitar orçamento
+## O projeto
+
+- Página responsiva para desktop e celular
+- Vídeo de abertura com reprodução automática sem som
+- Vídeo de apresentação incorporado do YouTube
+- Galeria de fotos com visualização ampliada
+- Formações musicais com mensagens de orçamento específicas pelo WhatsApp
+- Seções de eventos, depoimentos e contato
+- Animações de entrada e pequenos movimentos com GSAP
 
 ## Tecnologias
 
-React, TypeScript, Vite, GSAP e CSS.
+React, TypeScript, Vite, CSS e GSAP.
 
-## Rodando localmente
+## Executar localmente
 
-Requer Node.js e npm.
+Com Node.js e npm instalados:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Para conferir a versão de produção:
+Para gerar e testar a versão de produção:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Decisões de desenvolvimento
+## Algumas decisões
 
-O maior cuidado foi equilibrar movimento e desempenho. Optei por animações de transformações leves, sem prender os efeitos à rolagem da página. O vídeo curto da abertura fica sem áudio para reprodução automática; o vídeo completo do show mantém o som e os controles de reprodução.
+O vídeo da primeira tela fica sem áudio para permitir a reprodução automática nos navegadores. Já o vídeo de apresentação usa o player do YouTube, com controles próprios e áudio disponível quando o visitante inicia a reprodução.
 
-A navegação leva aos títulos das seções, evitando que o espaçamento interno faça o conteúdo aparecer longe do topo da tela.
+Nas formações, preferi levar cada opção diretamente ao WhatsApp com uma mensagem pronta. Assim, quem entra em contato já informa qual formato de show procura.
 
-## Materiais e créditos
+Também procurei manter as animações leves e deixar a navegação confortável no celular, onde espaço e desempenho fazem mais diferença.
 
-As fotografias, gravações, identidade e avaliações pertencem aos respectivos titulares e foram disponibilizadas para este projeto. O uso ou redistribuição desses materiais depende da autorização dos responsáveis.
+## Materiais
 
-Projeto de desenvolvimento web: [Dzelmee](https://github.com/Dzelmee).
+Este projeto foi desenvolvido para a POP21. Fotografias, vídeos, marca e depoimentos pertencem aos respectivos titulares. A disponibilização do código não concede autorização para reutilizar esses materiais em outros projetos.
+
+Desenvolvimento: [Dzelmee](https://github.com/Dzelmee).
