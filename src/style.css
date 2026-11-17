@@ -133,3 +133,10 @@ html{scroll-behavior:auto}
 
 /* Player oficial do YouTube na seção do show */
 .showreel-inline iframe{display:block;width:100%;aspect-ratio:16/9;height:auto;border:1px solid #ffffff30;border-radius:10px;background:#050505}
+
+/* Showcase: player amplo, proporção 16:9 e moldura discreta */
+.statement-bottom{align-items:center;gap:clamp(28px,5vw,90px)}
+.statement-bottom>p{flex:0 1 360px}
+.showreel-inline{flex:1 1 650px;width:min(100%,760px);max-width:760px;gap:14px}
+.showreel-inline iframe{width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:14px;box-shadow:0 20px 70px #0009;display:block;background:#050505}
+@media(max-width:900px){.statement-bottom{align-items:stretch}.statement-bottom>p{flex:auto}.showreel-inline{width:100%;max-width:none;flex:auto}}
