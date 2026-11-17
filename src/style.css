@@ -130,3 +130,6 @@ html{scroll-behavior:auto}
 .showreel-inline-link{display:inline-flex;align-items:center;gap:9px;align-self:flex-start;color:#e8a77c;font-size:11px;letter-spacing:.08em;text-decoration:none;padding:8px 0}
 .showreel-inline-link:hover{text-decoration:underline}
 @media(max-width:900px){.statement-bottom{flex-direction:column;align-items:stretch}.showreel-inline{width:100%;flex:auto}.showreel-inline video{max-height:65vh}}
+
+/* Player oficial do YouTube na seção do show */
+.showreel-inline iframe{display:block;width:100%;aspect-ratio:16/9;height:auto;border:1px solid #ffffff30;border-radius:10px;background:#050505}
